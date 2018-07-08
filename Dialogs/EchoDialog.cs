@@ -101,7 +101,7 @@ namespace Microsoft.Bot.Sample.SimpleEchoBot
             var replyMessage = context.MakeMessage();
 
             Attachment attachment = null;
-
+            await context.PostAsync($"message said {message.Text}");
             switch (message)
             {
                 case "1":
